@@ -5,11 +5,9 @@ Interpretable Deep Learning Framework for Skin Cancer Classification Using HAM10
 Skin cancer detection using HAM10000 dataset (10,015 dermatoscopic images, 7 lesion types). DenseNet121 + Grad-CAM achieved **83.03% validation accuracy** with explainable heatmaps for clinical trust.
 
 * Repository Structure:
-SkinCancerDetection/
-├── code/skincancerfinal.ipynb # Complete implementation
-├── results/ # Grad-CAM heatmaps (6 images)
-│ ├── WhatsApp Image 2025-12-02... # Visualization results
-└── README.md # This file
+
+**Total: 1 notebook + 6 Grad-CAM visualizations + README**
+
 
 * Methodology
 
@@ -19,21 +17,22 @@ SkinCancerDetection/
 - **Augmentation**: Rotation, zoom, flip, shear, shifts [web:21]
 
 ### 2. Models Implemented
-Basic CNN (81.85% val acc)
-├── ResNet50 (80.56% val acc)
-├── MobileNetV2 (70.89% val acc)
-└── DenseNet121 (83.03% val acc) ← BEST
+| Model | Validation Accuracy |
+|-------|-------------------:|
+| Basic CNN | 68.85% |
+| ResNet50 | 80.56% |
+| MobileNetV2 | 70.89% |
+| **DenseNet121** | **83.03%** ← BEST |
 
 text
 
 ### 3. Training Process
-Hyperparameters:
-├── Optimizer: Adam (lr=0.001)
-├── Batch size: 32
-├── Loss: Categorical Cross-Entropy
-├── Early stopping
-└── Google Colab GPU
-
+**Hyperparameters:**
+- Optimizer: Adam (lr=0.001)
+- Batch size: 32
+- Loss: Categorical Cross-Entropy
+- Early stopping
+- Google Colab GPU
 text
 
 ### 4. Explainability
